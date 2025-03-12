@@ -98,6 +98,11 @@
   background-color: blueviolet;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
 }
 
 .card div:last-child{
