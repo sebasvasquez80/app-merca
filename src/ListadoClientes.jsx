@@ -1,17 +1,16 @@
 import MenuLateral from "./MenuLateral";
 import Card from "./Card";
-
-function ListadoClientes(){
-    return(
-<div className="panel-control">
-            <MenuLateral/>
+import { clientes } from "./database";
+function ListadoClientes() {
+    return (
+        <div className="panel-control">
+            <MenuLateral />
             <section className="panel-control-Clientes">
-                <Card/>
-                <Card/>
-                <Card/>
-                <Card/>
-                <Card/>
-                <Card/>
+                {
+                    clientes.map((cliente) => { 
+                        return <Card type={'clientes'} prop={cliente} /> 
+                    })
+                }
             </section>
         </div>
     )
